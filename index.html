@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/images/Dasdas Logo 1.svg" alt="Dasdas logo">
+        <div class="socials">
+            <img class="twitter" src="/images/twitter.svg" alt="">
+            .
+            <img class="dribble" src="/images/dribbble.svg" alt="">
+            .
+            <img class="figma" src="/images/figma.svg" alt="">
+            .
+            <img class="git" src="/images/github.svg" alt="">
+        </div>
+    </div>
+
+    <div class="top">
+        <img class="topimg" src="/images/header.svg" alt="">
+        <div class="toptxt">
+            <div class="txtmain">
+                <div class="txttiny">
+                    <p><span>Front-end</span> . 1 hour ago</p>
+                </div>
+                <h4>Optimizing CSS for faster page loads </h4>
+                <p>Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well.
+
+                To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...</p>
+            </div>
+            <div class="txtbtm">
+                <p>3 min read</p>
+                <button class="btn1">Read full</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body">
+        <div class="frame1">
+            <div class="grid1">
+                <img class="" src="/images/css grid.svg" alt="">
+                <div class="grid4txt">
+                    <div class="tinytxt">
+                        <p><span>Front-end</span>  . 1 Month Ago</p>
+                    </div>
+                    <div class="grid4txtmain">
+                        <h5>Css Grid</h5>
+                        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid2">
+                    <img class="" src="/images/colors.svg" alt="">
+                    <div class="grid4txt">
+                        <div class="tinytxt">
+                            <p><span>Front-end</span>  . 2 Month Ago</p>
+                        </div>
+                        <div class="grid4txtmain">
+                            <h5>Colors in CSS</h5>
+                            <p>Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="grid3">
+                    <img class="" src="/images/variables.svg" alt="">
+                    <div class="grid4txt">
+                        <div class="tinytxt">
+                            <p><span>Front-end</span>  . 2 Month Ago</p>
+                        </div>
+                        <div class="grid4txtmain">
+                            <h5>CSS Variables</h5>
+                            <p>CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.</p>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="frame2">
+            <div class="grid4">
+                <img class="" src="/images/css grid.svg" alt="">
+                <div class="grid4txt">
+                    <div class="tinytxt">
+                        <p><span>Front-end</span>  . 1 Month Ago</p>
+                    </div>
+                    <div class="grid4txtmain">
+                        <h5>Css Grid</h5>
+                        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid5">
+                    <img class="" src="/images/colors.svg" alt="">
+                    <div class="grid4txt">
+                        <div class="tinytxt">
+                            <p><span>Front-end</span>  . 2 Month Ago</p>
+                        </div>
+                        <div class="grid4txtmain">
+                            <h5>Colors in CSS</h5>
+                            <p>Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="grid6">
+                    <img class="" src="/images/variables.svg" alt="">
+                    <div class="grid4txt">
+                        <div class="tinytxt">
+                            <p><span>Front-end</span>  . 2 Month Ago</p>
+                        </div>
+                        <div class="grid4txtmain">
+                            <h5>CSS Variables</h5>
+                            <p>CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="end">
+        <p class="end1">Join our Team of Writers</p>
+        <p class="end2">On dasdas, writers earn a living doing what they love. 
+            Getting started is easy. Just pay a one time $25 fee and everything is ready to go.</p>
+    </div>
+
+        <script src="https://checkout.flutterwave.com/v3.js"></script>
+        <form>
+          <button type="button" id="start-payment-button" onclick="makePayment()">JOIN US</button>
+        </form>
+        <script>
+          function makePayment() {
+            FlutterwaveCheckout({
+              public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
+              tx_ref: "titanic-48981487343MDI0NzMx",
+              amount: 54600,
+              currency: "NGN",
+              payment_options: "card",
+              redirect_url: "https://glaciers.titanic.com/handle-flutterwave-payment",
+              meta: {
+                consumer_id: 23,
+                consumer_mac: "92a3-912ba-1192a",
+              },
+              customer: {
+                email: "rose@unsinkableship.com",
+                phone_number: "08102909304",
+                name: "Rose DeWitt Bukater",
+              },
+              customizations: {
+                title: "The Dasdas Community",
+                description: "Payment to join the community",
+                logo: "images\Dasdas Logo 1.svg",
+              },
+            });
+          }
+        </script>
+</body>
+
+</html>
